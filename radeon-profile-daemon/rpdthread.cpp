@@ -87,10 +87,10 @@ void rpdThread::sendMessage(const QString &msg)
 
 void rpdThread::checkConnection() {
     if (!connectionConfirmed) {
-        qDebug() << "Confirmation not received, closing connection";
+        qDebug() << "Confirmation not received, continue anyway";
 
-        resetSystemDefaults();
-        closeConnection();
+        //resetSystemDefaults();
+        //closeConnection();
         return;
     }
 
